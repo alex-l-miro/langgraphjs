@@ -13,6 +13,12 @@ type ChannelVersion = number | string;
 
 export type ChannelVersions = Record<string, ChannelVersion>;
 
+export interface CheckpointBase {
+  v: number;
+  id: string;
+  ts: string;
+}
+
 export interface Checkpoint<
   N extends string = string,
   C extends string = string
